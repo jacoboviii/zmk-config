@@ -4,15 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: tokyo_corne
-      url-base: https://github.com/tokyo2006/zmk-config-corne
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: tokyo
-      remote: tokyo_corne
+    - name: zmk-config-corne
+      remote: tokyo2006
       revision: main
   self:
     path: config
