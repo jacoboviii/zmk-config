@@ -1,197 +1,344 @@
 layers:
-  QWERTY:
-  - TAB
+  Base:
+  - ''
   - Q
   - W
   - E
   - R
   - T
-  - UP
+  - '&mmv MOVE_UP'
   - Y
   - U
   - I
   - O
   - P
-  - BSPC
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
+  - ''
+  - ''
+  - {t: A, h: LEFT META}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LEFT SHIFT}
   - G
-  - LEFT
-  - ENTER
-  - RIGHT
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
   - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LCTRL
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RIGHT ALT}
+  - {t: '''', h: RIGHT META}
+  - ''
+  - ''
   - Z
   - X
   - C
   - V
   - B
-  - SPACE
-  - DOWN
+  - MUTE
+  - '&mmv MOVE_DOWN'
   - N
   - M
   - ','
   - .
   - /
-  - ESC
-  - LGUI
-  - NUMBER
-  - {t: SPACE, h: Fn}
-  - {t: ENTER, h: Fn}
-  - SYMBOL
-  - RALT
-  NUMBER:
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '&mmv MOVE_UP'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BSPC
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - '&mmv MOVE_LEFT'
+  - ''
+  - {t: ESC, h: Media}
+  - {t: SPACE, h: Nav}
+  - {t: TAB, h: Mouse}
+  - {t: ENTER, h: Sym}
+  - {t: BACKSPACE, h: Num}
+  - {t: DELETE, h: Fun}
+  Nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_DOWN'
+  - Sft+Gui+Z
+  - Gui+V
+  - Gui+C
+  - Gui+X
+  - Gui+Z
+  - ''
+  - ''
+  - LEFT META
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ''
+  - '&msc SCRL_LEFT'
   - '&mkp LCLK'
-  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - '&caps_word'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - '&msc SCRL_UP'
   - HOME
-  - PG UP
-  - {t: ▽, type: trans}
-  - RGB OFF
-  - RGB ON
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RGB EFF
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - INS
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ENTER
+  - BACKSPACE
+  - DELETE
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_UP'
+  - Sft+Gui+Z
+  - Gui+V
+  - Gui+C
+  - Gui+X
+  - Gui+Z
+  - ''
+  - ''
+  - LEFT META
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - MUTE
   - '&mmv MOVE_DOWN'
-  - RGB EFR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  Media:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_UP'
+  - RGB TOG
+  - RGB EFF
   - RGB SPI
   - RGB BRI
   - RGB BRD
-  - END
-  - PG DN
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - LEFT META
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - PREVIOUS
+  - VOLUME DOWN
+  - VOLUME UP
+  - NEXT
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - '&mmv MOVE_DOWN'
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - INS
-  - DEL
-  - {t: ▽, type: trans}
-  SYMBOL:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - ''
+  - ''
+  - STOP
+  - PLAY PAUSE
+  - MUTE
+  Num:
+  - ''
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
   - '&mmv MOVE_UP'
-  - ^
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - MUTE
+  - '&mmv MOVE_DOWN'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
+  - ''
+  - {type: held}
+  - ''
+  Sym:
+  - ''
+  - '{'
   - '&'
   - '*'
   - (
-  - )
-  - BSPC
-  - {t: ▽, type: trans}
-  - BT CLR
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - '&mkp MB4'
+  - '}'
+  - '&mmv MOVE_UP'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - {t: ▽, type: trans}
-  - OUT USB
-  - OUT BLE
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
   - ''
   - ''
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_DOWN'
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
   - '~'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - MUTE
+  - '&mmv MOVE_DOWN'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - _
   - {type: held}
-  - {t: ▽, type: trans}
-  Fn:
-  - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - '&mmv MOVE_UP'
-  - F6
+  - ''
+  - ''
+  Fun:
+  - ''
+  - F12
   - F7
   - F8
   - F9
-  - F10
+  - PRINTSCREEN
+  - '&mmv MOVE_UP'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - '&mkp MB4'
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
-  - '&bootloader'
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - PRINTSCREEN
-  - F12
-  - {t: ▽, type: trans}
-  - '&sys_reset'
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - '&mkp MB5'
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
   - MUTE
   - '&mmv MOVE_DOWN'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - '&sys_reset'
-  - SCROLLLOCK
-  - PAUSE BREAK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - SPACE
+  - TAB
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
