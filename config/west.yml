@@ -5,13 +5,13 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: eyelash_corne
-      url-base: https://github.com/a741725193/zmk-new_corne
+      url-base: https://github.com/a741725193
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: eyelash
+    - name: zmk-new_corne
       remote: eyelash_corne
       revision: main
   self:
